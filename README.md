@@ -1,5 +1,6 @@
 
 # Mission to Mars
+![Screen Shot 2021-10-17 at 3 03 33 PM](https://user-images.githubusercontent.com/82982952/137641251-1bf3d5ac-9437-4769-8660-b6831f5011d2.png)
 
 ## Background and Purpose
 
