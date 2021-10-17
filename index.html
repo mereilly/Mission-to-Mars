@@ -9,6 +9,19 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
+     <!-- Section for Header Image  -->
+     <div class="row" id="nasa-featured-image">
+      <div class="col-md-8">
+        <h2>Nasa Mars Image</h2>
+          <!-- from https://getbootstrap.com/docs/3.3/css/ -->
+        <img
+          src="{{nasa.featured_image }}"
+          class="img-responsive"
+          alt="Responsive image"
+        />
+      </div>
+    <img src="..." class="img-responsive" alt="Responsive image">
+    <h1 class="text-hide">Custom heading</h1>
   </head>
   <body>
     <div class="container">
@@ -59,11 +72,13 @@
         <div class="page-header">
           <h2 class="text-center">Mars Hemispheres</h2>
         </div>
-
+        <!-- Anything between {{ and }} is an expression that will be output to the final document. {% and %} denotes a control flow statement like if and for.  -->
         {% for hemisphere in mars.hemispheres %}
         <div class="col-md-6">
           <div class="thumbnail">
-            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
+            <!-- two different items on the same row using Bootstrap, such as an image and a fact table, how would the tags be nested? The code for the image and the fact table both need to be nested inside the <div class=”row”/> tags. -->
+            <img="fancybox-image" src="{{hemisphere.img_url | default(''image_url': 'https://marshemispheres.com/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg',
+            'title': 'Cerberus Hemisphere Enhanced', true)}}" alt="..." class="img-thumbnail" width="304" height="236">
             <div class="caption">
               <h3>{{hemisphere.title}}</h3>
             </div>
